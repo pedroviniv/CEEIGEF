@@ -195,14 +195,21 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: white;
-  background-color: #fed136;
+  color: #fed136 !important;
+  background-color: transparent !important;
 }
-.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:hover {
+  color: #fed136;
+}
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #fec503;
+  color: #fff;
+  background-color: transparent;
 }
+
+.navbar-custom .navbar-nav > .active > a:active {
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -230,6 +237,34 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
+}
+
+.fed132 {
+  color: #fed132;
+}
+
+.btn-custom {
+  background-color: transparent !important;
+  border: 2px solid #fed136 !important;
+  border-radius: 30px;
+  border-top-left-radius: 0px;
+}
+
+.btn-custom:hover {
+  background-color: transparent !important;
+  color: #fed132 !important;
+}
+
+.btn-custom.active {
+  background-color: transparent;
+}
+
+.btn-custom.active:hover {
+  background-color: transparent;
+}
+
+.btn-custom:hover {
+  background-color: transparent;
 }
 
 header {
@@ -322,6 +357,8 @@ section h2.section-heading {
   margin-top: 0;
   margin-bottom: 15px;
 }
+
+/*subtítulo da sessão*/
 section h3.section-subheading {
   font-size: 16px;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -592,10 +629,12 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
+  /*background-image: url('../img/map-image.png');*/
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/*Título da sessão*/
 section#contact .section-heading {
   color: white;
 }
@@ -604,43 +643,52 @@ section#contact .form-group {
 }
 section#contact .form-group input,
 section#contact .form-group textarea {
-  padding: 20px;
+  padding: 15px 20px;
+  background-color: #444;
+  border: 1px solid #444 !important;
+  border-bottom: 2px solid #444 !important;
 }
+
+section#contact .form-group .form-control {
+  color: #fff;
+}
+
 section#contact .form-group input.form-control {
   height: auto;
 }
 section#contact .form-group textarea.form-control {
   height: 236px;
 }
+
 section#contact .form-control:focus {
-  border-color: #fed136;
   box-shadow: none;
+  border-bottom-color: #fed132 !important;
 }
 section#contact ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #999;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #999;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #999;
 }
 section#contact :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  color: #eeeeee;
+  color: #999;
 }
 section#contact .text-danger {
   color: #e74c3c;
