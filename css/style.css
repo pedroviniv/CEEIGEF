@@ -154,6 +154,12 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
+.navbar-custom .navbar-brand img{
+  width: 90px;
+}
+.navbar-brand {
+  padding: 5px;
+}
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
@@ -251,16 +257,13 @@ header .intro-text-wrapper {
   color:yellow;
   z-index: 1;
 }
+header .intro-text-wrapper img{
+  width: 350px;
+  padding-top: 35vh;
+  padding-bottom: 50px;
+}
 header .intro-text-wrapper h1{
   padding-top: 35vh;
-}
-header .intro-text-logo{
-  vertical-align: 34px;
-  font-size: 45px;
-}
-header .intro-text-logo-first-character{
-  font-size: 150px;
-  color: white;
 }
 header .intro-text{
   font-size: 24px;
@@ -287,11 +290,8 @@ header .video-wrapper video{
   z-index: -1;
 }
 @media (max-width: 678px) {
-  header .intro-text-logo{
-    font-size: 35px;
-  }
-  header .intro-text-logo-first-character{
-    font-size: 130px;
+  header .intro-text-wrapper img{
+    width: 300px;
   }
   header .intro-text{
     font-size: 20px;
@@ -302,12 +302,8 @@ header .video-wrapper video{
 }
 
 @media (max-width: 570px) {
-  header .intro-text-logo{
-    vertical-align: 28px;
-    font-size: 25px;
-  }
-  header .intro-text-logo-first-character{
-    font-size: 110px;
+  header .intro-text-wrapper img{
+    width: 250px;
   }
   header .intro-text{
     font-size: 16px;
